@@ -5,7 +5,7 @@ declare(strict_types=1);
 require __DIR__ . ('/functions.php');
 require __DIR__ . ('/data.php');
 
-$timeDate = date("h:i:sa");
+
 
 ?>
 <!DOCTYPE html>
@@ -13,6 +13,7 @@ $timeDate = date("h:i:sa");
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         * {
             box-sizing: border-box;
@@ -28,8 +29,8 @@ $timeDate = date("h:i:sa");
         /* Header/Blog Title */
         .header {
             padding: 30px;
-            font-size: 40px;
-            text-align: center;
+            display: flex;
+            justify-content: center;
             background: white;
         }
 
@@ -41,18 +42,18 @@ $timeDate = date("h:i:sa");
         }
 
         /* Right column */
-        /*   .rightcolumn {
+        .rightcolumn {
             float: left;
             width: 25%;
             padding-left: 20px;
-        } */
+        }
 
         /* Fake image */
-        .fakeimg {
+        /*  .fakeimg {
             background-color: #aaa;
             width: 100%;
             padding: 20px;
-        }
+        }*/
 
         /* Add a card effect for articles */
         .card {
@@ -79,10 +80,8 @@ $timeDate = date("h:i:sa");
         /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
         @media screen and (max-width: 800px) {
 
-            .leftcolumn
-
-            /* .rightcolumn */
-                {
+            .leftcolumn,
+            .rightcolumn {
                 width: 100%;
                 padding: 0;
             }
@@ -97,9 +96,8 @@ $timeDate = date("h:i:sa");
 <body>
 
     <div class="header">
-        <h2>Blog Name</h2>
+        <img src="./img/fakenews.png" style="height:200px;" />
     </div>
-
     <div class="row">
         <div class="leftcolumn">
             <div class="card">
@@ -112,40 +110,47 @@ $timeDate = date("h:i:sa");
                     <h5><?= $article['author']; ?></h5>
                     <!-- funkar ej ^^ -->
                     <div class="fakeimg" style="height:200px;">Image</div>
-                    <button>LIKE</button>
+                    <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
                     <p>
                         <?= $article['content']; ?>
                     <?php endforeach; ?>
                     </p>
             </div>
+        </div>
 
 
-            </p>
+
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>Om oss</h2>
+                <img src="./img/sheep.png" style="height:100px;">
+                <p>Linnlands Nytts grundare Lamméth</p>
+            </div>
+            <div class="card">
+                <h3>Impopular Post</h3>
+                <div class="fakeimg">USA</div><br>
+                <div class="fakeimg">Corona</div><br>
+                <div class="fakeimg">Biljettkontrollanter</div>
+            </div>
+            <div class="card">
+                <h3>Följ mig på linnstagram:</h3>
+                <p>@nopleasedont</p>
+            </div>
         </div>
     </div>
-    <!--  <div class="rightcolumn">
-            <div class="card">
-                <h2>About Me</h2>
-                <div class="fakeimg" style="height:100px;">Image</div>
-                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-            </div>
-            <div class="card">
-                <h3>Popular Post</h3>
-                <div class="fakeimg">Image</div><br>
-                <div class="fakeimg">Image</div><br>
-                <div class="fakeimg">Image</div>
-            </div>
-            <div class="card">
-                <h3>Follow Me</h3>
-                <p>Some text..</p>
-            </div>
-        </div> -->
-    </div>
+
+
 
     <div class="footer">
-        <h2>Footer</h2>
+        <h2>Brought to you by Linnland Coroporations</h2>
     </div>
 
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("fa-thumbs-down");
+        }
+    </script>
 </body>
 
 </html>
