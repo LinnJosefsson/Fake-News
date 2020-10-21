@@ -2,8 +2,9 @@
 
 declare(strict_types=1);
 
-require __DIR__ . ('/functions.php');
+
 require __DIR__ . ('/data.php');
+
 
 
 
@@ -14,6 +15,7 @@ require __DIR__ . ('/data.php');
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Fake news</title>
     <style>
         * {
             box-sizing: border-box;
@@ -90,10 +92,24 @@ require __DIR__ . ('/data.php');
         button {
             margin-top: 5px;
         }
+
+        .article-img {
+            width: 100%;
+        }
+
+        .ads {
+            padding: 1px;
+            width: 300px;
+        }
     </style>
 </head>
 
 <body>
+
+
+
+
+
 
     <div class="header">
         <img src="./img/fakenews.png" style="height:200px;" />
@@ -109,12 +125,20 @@ require __DIR__ . ('/data.php');
                     <!-- funkar ej -->
                     <h5><?= $article['author']; ?></h5>
                     <!-- funkar ej ^^ -->
-                    <div class="fakeimg" style="height:200px;">Image</div>
+
+                    <!-- <img class="article-img" style="height:200px;"><?= $articleImg; ?> -->
+
+                    <p><?= $article['likes']; ?> Likes</p>
                     <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
                     <p>
                         <?= $article['content']; ?>
                     <?php endforeach; ?>
-                    </p>
+
+                    <h2 style="color: hotpink;">
+                        <?php require __DIR__ . '/functions.php';
+                        echo $commercial['name']; ?>
+                    </h2>
+
             </div>
         </div>
 

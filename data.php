@@ -4,7 +4,18 @@ declare(strict_types=1);
 
 
 
-///en bild på tumme upp ist för 'likes'
+//fixa bilder
+
+$commercials = [
+    ['name' => 'lorem'],
+    ['name' => 'lorem2'],
+    ['name' => 'lorem3'],
+    ['name' => 'lorem4'],
+    ['name' => 'lorem5'],
+
+];
+
+
 
 $authors = [
     ['id' => 1, 'fullname' => 'Linn ForTheWin'],
@@ -24,6 +35,7 @@ $articles = [
         'author' => $authors[0]['fullname'],
         'published date' => 010101,
         'likes' => '3',
+        /* 'image' => 'https://www.dachshund-owner-guide.com/images/SmothHairedDachshund.jpg', */
     ],
 
     [
