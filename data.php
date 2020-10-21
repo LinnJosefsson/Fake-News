@@ -2,18 +2,19 @@
 
 declare(strict_types=1);
 
-
-
 //fixa bilder
 
-$commercials = [
-    ['name' => 'lorem'],
-    ['name' => 'lorem2'],
-    ['name' => 'lorem3'],
-    ['name' => 'lorem4'],
-    ['name' => 'lorem5'],
+/*lägg in variabel $published i publish date i $actricles 
+ specifiera i function */
 
-];
+/* $commercials = [
+    ['id' => 1, 'name' => 'Milk-commercial'],
+    ['id' => 2, 'name' => 'Bread-commercial'],
+    ['id' => 3, 'name' => 'Apple-commercial'],
+    ['id' => 4, 'name' => 'Lorem-commercial'],
+    ['id' => 5, 'name' => 'Commercial commercial'],
+
+]; */
 
 
 

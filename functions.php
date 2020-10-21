@@ -1,36 +1,16 @@
 <?php
 
+declare(strict_types=1);
 require __DIR__ . ('/data.php');
 
+$year = mt_rand(1, 2020);
+$month = mt_rand(1, 12);
+$day = mt_rand(1, 28);
 
-
-
-function ads($commercials)
+function randomDate($day, $month, $year)
 {
-    $commercial = [];
-
-    foreach ($commercials as $commercial) : ?>
-        <div class="ads"><?= $commercial['name']; ?></div>
-
-<?php
-
-    endforeach;
+    $getDate = $day . "-" . $month . "-" . $year;
+    return $getDate;
 }
 
-$cmmercial['name'] = ads($commercials);
-
-
-
-
-
-        /* function image($images)
-        {
-        foreach ($images as $image) : ?>
-        <img class="article-img" src="<?= $image; ?>" />
-<?php
-    endforeach;
-}
-
-$articleImg = image($images);
-echo $images[0]['image'];
-?> */
+echo randomDate($day,  $month, $year);

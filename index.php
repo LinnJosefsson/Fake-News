@@ -1,6 +1,5 @@
 <?php
 
-declare(strict_types=1);
 
 
 require __DIR__ . ('/data.php');
@@ -136,7 +135,7 @@ require __DIR__ . ('/data.php');
 
                     <h2 style="color: hotpink;">
                         <?php require __DIR__ . '/functions.php';
-                        echo $commercial['name']; ?>
+                        ?> <img src=" <?= ads($commercial); ?>" ?>
                     </h2>
 
             </div>
