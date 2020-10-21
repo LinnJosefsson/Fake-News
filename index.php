@@ -56,6 +56,7 @@ require __DIR__ . ('/data.php');
             padding: 20px;
         }*/
 
+
         /* Add a card effect for articles */
         .card {
             background-color: white;
@@ -105,11 +106,6 @@ require __DIR__ . ('/data.php');
 
 <body>
 
-
-
-
-
-
     <div class="header">
         <img src="./img/fakenews.png" style="height:200px;" />
     </div>
@@ -121,29 +117,22 @@ require __DIR__ . ('/data.php');
                         <?= $article['title']; ?>
                     </h2>
 
-                    <!-- funkar ej -->
+
                     <h5><?= $article['author']; ?></h5>
-                    <!-- funkar ej ^^ -->
+
 
                     <!-- <img class="article-img" style="height:200px;"><?= $articleImg; ?> -->
+
+                    <!-- funkar ej ^^-->
+
 
                     <p><?= $article['likes']; ?> Likes</p>
                     <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
                     <p>
                         <?= $article['content']; ?>
                     <?php endforeach; ?>
-
-                    <h2 style="color: hotpink;">
-                        <?php require __DIR__ . '/functions.php';
-                        ?> <img src=" <?= ads($commercial); ?>" ?>
-                    </h2>
-
             </div>
         </div>
-
-
-
-
         <div class="rightcolumn">
             <div class="card">
                 <h2>Om oss</h2>
@@ -162,8 +151,6 @@ require __DIR__ . ('/data.php');
             </div>
         </div>
     </div>
-
-
 
     <div class="footer">
         <h2>Brought to you by Linnland Coroporations</h2>

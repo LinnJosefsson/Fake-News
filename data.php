@@ -4,18 +4,6 @@ declare(strict_types=1);
 
 //fixa bilder
 
-/*lägg in variabel $published i publish date i $actricles 
- specifiera i function */
-
-/* $commercials = [
-    ['id' => 1, 'name' => 'Milk-commercial'],
-    ['id' => 2, 'name' => 'Bread-commercial'],
-    ['id' => 3, 'name' => 'Apple-commercial'],
-    ['id' => 4, 'name' => 'Lorem-commercial'],
-    ['id' => 5, 'name' => 'Commercial commercial'],
-
-]; */
-
 
 
 $authors = [
@@ -48,6 +36,18 @@ $articles = [
         'published date' => 020202,
         'author' => $authors[1]['fullname'],
         'likes' => '999991',
+    ],
+
+    [
+
+        'title' => 'Matador berättar - Så lyckas jag hålla hemmet rent',
+        'content' => 'Ja nej det är väl inte så märkligt, snälla låt mig va.
+     adipisicing elit. A itaque iusto quia alias quibusdam 
+     quod incidunt amet sequi. Voluptatibus ipsam nemo molestiae, 
+     aliquam enim nobis dicta neque eveniet tenetur quia.',
+        'author' => $authors[3]['fullname'],
+        'published date' => 030303,
+        'likes' => '1',
     ],
 
     [
@@ -120,18 +120,7 @@ $articles = [
         'published date' => 070707,
         'likes' => '1768',
     ],
-    [
 
-        'title' => 'Matador berättar - Så lyckas jag hålla hemmet rent',
-        'content' => 'Ja nej det är väl inte så märkligt
-         dolor sit amet consectetur,
-     adipisicing elit. A itaque iusto quia alias quibusdam 
-     quod incidunt amet sequi. Voluptatibus ipsam nemo molestiae, 
-     aliquam enim nobis dicta neque eveniet tenetur quia.',
-        'author' => $authors[3]['fullname'],
-        'published date' => 030303,
-        'likes' => '1',
-    ],
 
     [
 
