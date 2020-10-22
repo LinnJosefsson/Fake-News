@@ -1,7 +1,7 @@
 <?php
 
 
-
+require __DIR__ . ('/functions.php');
 require __DIR__ . ('/data.php');
 
 
@@ -116,6 +116,9 @@ require __DIR__ . ('/data.php');
                     <h2>
                         <?= $article['title']; ?>
                     </h2>
+                    <p> Publicerad:
+                        <?= $article['publishedDate']; ?>
+                    </p>
 
 
                     <h5><?= $article['author']; ?></h5>
@@ -130,9 +133,11 @@ require __DIR__ . ('/data.php');
                     <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
                     <p>
                         <?= $article['content']; ?>
-                    <?php endforeach; ?>
+                    </p>
+                <?php endforeach; ?>
             </div>
         </div>
+
         <div class="rightcolumn">
             <div class="card">
                 <h2>Om oss</h2>
