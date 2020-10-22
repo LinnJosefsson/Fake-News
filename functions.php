@@ -10,5 +10,4 @@ function randomDate($day, $month, $year)
 {
     return $day . "-" . $month . "-" . $year;
 }
-$getDate = randomDate($day, $month, $year);
-echo $getDate;
+echo randomDate($day, $month, $year);
