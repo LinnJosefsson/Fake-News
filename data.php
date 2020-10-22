@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-require __DIR__ . ('/functions.php');
 
 //fixa bilder
 
@@ -23,9 +22,9 @@ $articles = [
      quod incidunt amet sequi. Voluptatibus ipsam nemo molestiae, 
      aliquam enim nobis dicta neque eveniet tenetur quia.',
         'author' => $authors[0]['fullname'],
-        'publishedDate' => randomDate($day, $month, $year),
+        'publishedDate' => randomDate(),
         'likes' => '3',
-        /* 'image' => 'https://www.dachshund-owner-guide.com/images/SmothHairedDachshund.jpg', */
+        'image' => 'https://www.dachshund-owner-guide.com/images/SmothHairedDachshund.jpg',
     ],
 
     [
@@ -34,7 +33,7 @@ $articles = [
      adipisicing elit. A itaque iusto quia alias quibusdam 
      quod incidunt amet sequi. Voluptatibus ipsam nemo molestiae, 
      aliquam enim nobis dicta neque eveniet tenetur quia.',
-        'publishedDate' => randomDate($day, $month, $year),
+        'publishedDate' => randomDate(),
         'author' => $authors[1]['fullname'],
         'likes' => '999991',
     ],
@@ -47,7 +46,7 @@ $articles = [
      quod incidunt amet sequi. Voluptatibus ipsam nemo molestiae, 
      aliquam enim nobis dicta neque eveniet tenetur quia.',
         'author' => $authors[3]['fullname'],
-        'publishedDate' => randomDate($day, $month, $year),
+        'publishedDate' => randomDate(),
         'likes' => '1',
     ],
 
@@ -58,7 +57,7 @@ $articles = [
      quod incidunt amet sequi. Voluptatibus ipsam nemo molestiae, 
      aliquam enim nobis dicta neque eveniet tenetur quia.',
         'author' => $authors[2]['fullname'],
-        'publishedDate' => randomDate($day, $month, $year),
+        'publishedDate' => randomDate(),
         'likes' => '1',
     ],
 
@@ -70,7 +69,7 @@ $articles = [
      quod incidunt amet sequi. Voluptatibus ipsam nemo molestiae, 
      aliquam enim nobis dicta neque eveniet tenetur quia.',
         'author' => $authors[3]['fullname'],
-        'publishedDate' => randomDate($day, $month, $year),
+        'publishedDate' => randomDate(),
         'likes' => '31',
     ],
 
@@ -82,7 +81,7 @@ $articles = [
      quod incidunt amet sequi. Voluptatibus ipsam nemo molestiae, 
      aliquam enim nobis dicta neque eveniet tenetur quia.',
         'author' => $authors[4]['fullname'],
-        'publishedDate' => randomDate($day, $month, $year),
+        'publishedDate' => randomDate(),
         'likes' => '1',
     ],
 
@@ -94,7 +93,7 @@ $articles = [
      quod incidunt amet sequi. Voluptatibus ipsam nemo molestiae, 
      aliquam enim nobis dicta neque eveniet tenetur quia.',
         'author' => $authors[0]['fullname'],
-        'publishedDate' => randomDate($day, $month, $year),
+        'publishedDate' => randomDate(),
         'likes' => '1000000000',
     ],
 
@@ -106,7 +105,7 @@ $articles = [
      quod incidunt amet sequi. Voluptatibus ipsam nemo molestiae, 
      aliquam enim nobis dicta neque eveniet tenetur quia.',
         'author' => $authors[1]['fullname'],
-        'publishedDate' => randomDate($day, $month, $year),
+        'publishedDate' => randomDate(),
         'likes' => '-2',
     ],
 
@@ -118,7 +117,7 @@ $articles = [
      quod incidunt amet sequi. Voluptatibus ipsam nemo molestiae, 
      aliquam enim nobis dicta neque eveniet tenetur quia.',
         'author' => $authors[2]['fullname'],
-        'publishedDate' => randomDate($day, $month, $year),
+        'publishedDate' => randomDate(),
         'likes' => '1768',
     ],
 
@@ -132,7 +131,7 @@ $articles = [
      quod incidunt amet sequi. Voluptatibus ipsam nemo molestiae, 
      aliquam enim nobis dicta neque eveniet tenetur quia.',
         'author' => $authors[4]['fullname'],
-        'publishedDate' => randomDate($day, $month, $year),
+        'publishedDate' => randomDate(),
         'likes' => '1',
     ],
 
