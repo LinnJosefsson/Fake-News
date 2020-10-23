@@ -24,7 +24,7 @@ $articles = [
         'author' => $authors[0]['fullname'],
         'publishedDate' => randomDate(),
         'likes' => '3',
-        'image' => 'https://www.dachshund-owner-guide.com/images/SmothHairedDachshund.jpg',
+        'image' => 'https://www.homesalive.ca/media/wysiwyg/Blogs/2017/April/extra-long-daschund.jpg'
     ],
 
     [
@@ -36,6 +36,7 @@ $articles = [
         'publishedDate' => randomDate(),
         'author' => $authors[1]['fullname'],
         'likes' => '999991',
+        'image' => 'https://www.familyhandyman.com/wp-content/uploads/sites/9/2017/08/measure-to-ceiling.jpg'
     ],
 
     [
@@ -48,17 +49,19 @@ $articles = [
         'author' => $authors[3]['fullname'],
         'publishedDate' => randomDate(),
         'likes' => '1',
+        'image' => 'https://www.worldculturepictorial.com/images/content_3/matador-bull.jpg'
     ],
 
     [
-        'title' => 'Akuta finansråd',
-        'content' => 'Cashen dom tas ipsum dolor sit amet consectetur,
+        'title' => 'Alkoholen talar ut om sina människoproblem',
+        'content' => 'Jag orkar inte mer nu. ipsum dolor sit amet consectetur,
      adipisicing elit. A itaque iusto quia alias quibusdam 
      quod incidunt amet sequi. Voluptatibus ipsam nemo molestiae, 
      aliquam enim nobis dicta neque eveniet tenetur quia.',
         'author' => $authors[2]['fullname'],
         'publishedDate' => randomDate(),
         'likes' => '1',
+        'image' => 'http://krapps.com/wp-content/uploads/2009/11/atalkingbeersplash.jpg'
     ],
 
     [
@@ -71,6 +74,7 @@ $articles = [
         'author' => $authors[3]['fullname'],
         'publishedDate' => randomDate(),
         'likes' => '31',
+        'image' => 'https://www.msc.org/images/default-source/msc-english/content-banner/fish-to-eat/herring.jpg?sfvrsn=d1da5a4c_4'
     ],
 
     [
@@ -83,6 +87,7 @@ $articles = [
         'author' => $authors[4]['fullname'],
         'publishedDate' => randomDate(),
         'likes' => '1',
+        'image' => 'https://i.imgur.com/9WBRvmn.jpg'
     ],
 
     [
@@ -95,6 +100,7 @@ $articles = [
         'author' => $authors[0]['fullname'],
         'publishedDate' => randomDate(),
         'likes' => '1000000000',
+        'image' => 'http://www.tournorfolk.co.uk/dinosauradventure/dinosaurmodel.jpg'
     ],
 
     [
@@ -107,6 +113,7 @@ $articles = [
         'author' => $authors[1]['fullname'],
         'publishedDate' => randomDate(),
         'likes' => '-2',
+        'image' => 'https://1.bp.blogspot.com/-UxaLz8mY3IY/TVxaVPcvPUI/AAAAAAAAABU/t-b0MmtXQiM/s1600/Syjunta+1860-tal+001.jpg'
     ],
 
     [
@@ -119,6 +126,7 @@ $articles = [
         'author' => $authors[2]['fullname'],
         'publishedDate' => randomDate(),
         'likes' => '1768',
+        'image' => 'https://i.pinimg.com/originals/21/6a/bf/216abf39aad9b11ef47d68be80bda109.jpg'
     ],
 
 
@@ -133,6 +141,7 @@ $articles = [
         'author' => $authors[4]['fullname'],
         'publishedDate' => randomDate(),
         'likes' => '1',
+        'image' => 'https://stinabloom.files.wordpress.com/2009/02/hugga-ved.jpg'
     ],
 
 ];

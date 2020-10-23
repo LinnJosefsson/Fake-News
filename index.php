@@ -94,7 +94,7 @@ require __DIR__ . ('/data.php');
         }
 
         .article-img {
-            width: 100%;
+            max-width: 100%;
         }
 
         .ads {
@@ -123,13 +123,8 @@ require __DIR__ . ('/data.php');
 
                     <h5><?= $article['author']; ?></h5>
 
-
-                    <img class="article-img" style="height:200px;"><?= $article['image']; ?>
-
-
-
-
-                    <p><?= $article['likes']; ?> Likes</p>
+                    <img class="article-img" style="height:200px;" src="<?= $article['image']; ?>">
+                    <p> <?= $article['likes']; ?> Likes</p>
                     <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
                     <p>
                         <?= $article['content']; ?>
