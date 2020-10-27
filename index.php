@@ -117,7 +117,8 @@ require __DIR__ . ('/data.php');
                         <?= $article['title']; ?>
                     </h2>
                     <i> Publicerad:
-                        <?= $article['publishedDate']; ?>
+                        <?php sortDate($a, $b); ?>
+                        <?= $articles['publishedDate']; ?>
                     </i>
 
 

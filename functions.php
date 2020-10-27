@@ -5,9 +5,7 @@ require __DIR__ . ('/data.php');
 
 
 
-
-
-function randomDate()
+/* function randomDate()
 {
 
     $day = rand(1, 28);
@@ -15,4 +13,19 @@ function randomDate()
     $year = rand(1900, 2020);
 
     return $day . "-" . $month . "-" . $year;
+} */
+
+function sortDate($a, $b)
+{
+    if ($a == $b) return 0;
+    return ($a < $b) ? -1 : 1;
+}
+
+$a = array($articles['publishedDate']);
+
+usort($a, "sortDate");
+
+$arrlength = count($a);
+for ($x = 0; $x < $arrlength; $x++) {
+    echo $a[$x];
 }
