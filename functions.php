@@ -4,8 +4,18 @@ declare(strict_types=1);
 require __DIR__ . ('/data.php');
 
 
+function sortDates(array $element1, array $element2): int
+{
+    $datetime1 = strtotime($element1['publishedDate']);
+    $datetime2 = strtotime($element2['publishedDate']);
+    return $datetime2 - $datetime1;
+}  
 
-/* function randomDate()
+
+/* 
+Kan ej användas pga datum måste sorteras enligt uppgiften
+
+function randomDate()
 {
 
     $day = rand(1, 28);
@@ -14,18 +24,3 @@ require __DIR__ . ('/data.php');
 
     return $day . "-" . $month . "-" . $year;
 } */
-
-function sortDate($a, $b)
-{
-    if ($a == $b) return 0;
-    return ($a < $b) ? -1 : 1;
-}
-
-$a = array($articles['publishedDate']);
-
-usort($a, "sortDate");
-
-$arrlength = count($a);
-for ($x = 0; $x < $arrlength; $x++) {
-    echo $a[$x];
-}
