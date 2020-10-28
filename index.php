@@ -20,14 +20,12 @@ require __DIR__ . ('/data.php');
             box-sizing: border-box;
         }
 
-        /* Add a gray background color with some padding */
         body {
             font-family: Arial;
             padding: 20px;
             background: #f1f1f1;
         }
 
-        /* Header/Blog Title */
         .header {
             padding: 30px;
             display: flex;
@@ -35,43 +33,29 @@ require __DIR__ . ('/data.php');
             background: white;
         }
 
-        /* Create two unequal columns that floats next to each other */
-        /* Left column */
         .leftcolumn {
             float: left;
             width: 75%;
         }
 
-        /* Right column */
         .rightcolumn {
             float: left;
             width: 25%;
             padding-left: 20px;
         }
 
-        /* Fake image */
-        /*  .fakeimg {
-            background-color: #aaa;
-            width: 100%;
-            padding: 20px;
-        }*/
-
-
-        /* Add a card effect for articles */
         .card {
             background-color: white;
             padding: 20px;
             margin-top: 20px;
         }
 
-        /* Clear floats after the columns */
         .row:after {
             content: "";
             display: table;
             clear: both;
         }
 
-        /* Footer */
         .footer {
             padding: 20px;
             text-align: center;
@@ -79,7 +63,6 @@ require __DIR__ . ('/data.php');
             margin-top: 20px;
         }
 
-        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
         @media screen and (max-width: 800px) {
 
             .leftcolumn,
@@ -97,9 +80,8 @@ require __DIR__ . ('/data.php');
             max-width: 100%;
         }
 
-        .ads {
-            padding: 1px;
-            width: 300px;
+        .fa {
+            padding-right: 10px;
         }
     </style>
 </head>
@@ -112,21 +94,21 @@ require __DIR__ . ('/data.php');
     <div class="row">
         <div class="leftcolumn">
             <div class="card">
+
+                <?php usort($articles, 'sortDates') ?>
                 <?php foreach ($articles as $article) : ?>
+                    <?php $date = $article['publishedDate']; ?>
                     <h2>
                         <?= $article['title']; ?>
                     </h2>
-                    <i> Publicerad:
-                        <?php sortDate($a, $b); ?>
-                        <?= $articles['publishedDate']; ?>
-                    </i>
+                    <i> Publicerad: <?= $date ?> </i>
 
 
                     <h5><?= $article['author']; ?></h5>
 
                     <img class="article-img" style="height:200px;" src="<?= $article['image']; ?>">
-                    <p> <?= $article['likes']; ?> Likes</p>
-                    <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+                    <p> <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i><?= $article['likes']; ?> Likes </p>
+
                     <p>
                         <?= $article['content']; ?>
                     </p>
@@ -138,7 +120,7 @@ require __DIR__ . ('/data.php');
             <div class="card">
                 <h2>Om oss</h2>
                 <img src="./img/sheep.png" style="height:100px;">
-                <p>Linnlands Nytts grundare Lamméth</p>
+                <p>Fake News grundare Lamméth</p>
             </div>
             <div class="card">
                 <h3>Impopular Post</h3>
