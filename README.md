@@ -1,5 +1,5 @@
 # Fake News
- Make it 'til you fake it
+ <b>Make it 'til you fake it</b>
  
  Fake News-sida, första projektet i PHP i webbutvecklare-programmet på Yrgo
  
