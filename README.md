@@ -9,13 +9,13 @@
  3. Öppna localhost:8888/index.php i din browser.
  
  
- <u>Testare:</u>
+Testare:
  
  1. Réka Madarász
  
  2.
  
- <u>Kommentarer:</u>
+ Kommentarer:
  
  1.
  
