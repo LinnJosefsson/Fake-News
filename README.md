@@ -15,14 +15,14 @@ Testare:
  
  2. Ida From
  
- Kommentarer:
+ Kommentarer: Jon McGarvie
  
- 1.
+ 1. I usually prefer to have css in a seperate file, it would make the readability of your code better. 
+
+ 2. The title image, on `index.php:92`, doesn't scale correcly with different screen sizes. Make it more responsive.
  
- 2.
+ 3. Your sorting function works well, although you could move the `usort()` function into the `sortDates()` function. Less logic in the index.php file :)
  
- 3.
+ 4. The design of the website is very clean and responds well to changes in screen size, (except what i mentioned before).
  
- 4.
- 
- 5.
+ 5. You can still use the `randomDate()` function to reduce the amount of manual labor you had to do. I'm not sure where you used the function, but you could put it in the articles in `data.php`. Also use the `date()` function, it works very well for that sort of thing.
